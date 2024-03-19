@@ -1,0 +1,137 @@
+@font-face {
+  font-family: nighty;
+  src: url(Nightydemo.ttf);
+}
+@font-face {
+  font-family: sail;
+  src: url(Sail-Regular.ttf);
+}
+@font-face {
+  font-family: lora;
+  src: url(Lora/Lora-VariableFont_wght.ttf);
+}
+.card-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  height: 500px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 30px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 50%;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+/* .action {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #2563EB;
+  padding: 4px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+} */
+
+.action span {
+  transition: 0.3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+.searchbx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.form-control {
+  width: 60%;
+  border-radius: 50px;
+  border-color: blue;
+  margin-right: 5px;
+}
+.btn-outline-success {
+  border-radius: 50px;
+}
+.btn-outline-success:hover {
+  background-color: blue;
+  color: white;
+}
+
+.recipe-h h1 {
+  font-family: nighty;
+  font-size: 80px;
+  color: black;
+}
+.recipe-h {
+  border: 0.1rem solid blue;
+  font-family: nighty;
+  background-image: url("recipelp.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 200px;
+  text-align: center;
+}
+.card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+.card a {
+  text-decoration: none;
+  width: 100%;  /* padding-top: 30px; */
+}
+.recipe-h-content p {
+  font-family: lora;
+  color: black;
+  font-size: 25px;
+}
+.card-columns {
+  max-height: 80vh; /* Adjust max height as needed */
+  overflow-y: auto;
+}
+.card {
+  position: relative; /* For absolute positioning of button */
+}
+.action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  width: fit-content; /* Adjust to fit content width */
+  padding: 4px 8px;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  background-color: #2563eb;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.action:hover {
+  transform: translateY(-2px);
+}
